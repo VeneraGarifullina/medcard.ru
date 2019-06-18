@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Caveat|M+PLUS+Rounded+1c|Oswald|Prosto+One|Roboto+Mono');
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+</style>
+
+*{
+  margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+body {
+    background-color:#4de0b12b;
+}
+
+a {
+    color:cadetblue;
+    text-decoration: none;
+/*    transition: all.6s ease;     */
+}
+a:hover {
+    color:darksalmon;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+/*
+    transition: all 3s ease-out;
+    -webkit-transition: all 3s ease-out;
+*/
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+header {
+    float: left;
+    background-color: white;
+    width: 100%;
+    padding: 0.3%;
+    border-bottom: 5px solid #838398;
+}
+
+header>div#logo>a>img{
+    width: 65px;
+    height: 65px;
+    margin-left: 3px;
+    margin-bottom: 8px;
+    
+}
+
+header>div#logo>a {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+    margin-top:12px;
+}
+
+header>div#logo{
+    float: left;
+    font-size: 3em;
+    margin-left: 10px;
+    font-family: 'Prosto One', cursive;
+}
+
+#about{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.4em;
+    padding-top: 10px;
+    text-shadow: #454545 1px 1px 1px; 
+}
+#about>a{
+    color: white;
+    
+}
+
+#about>a:hover {
+    color:cadetblue;
+    border-bottom: 1px solid silver;
+}
+
+#about>a:last-child{
+    margin-left: 10%;
+}
+
+#registr>a{
+    color:#f4f4f4;
+}
+#registr{
+    float: right;
+    margin-right: 15px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 15px;
+}
+
+#registr:last-child {
+    margin-left: 10px;
+}
+
+/* Меню сайта*/
+
+nav{
+    background-color: white;
+    width: 100%;
+    padding: 7px 0.3%;
+    float: left;
+    border-bottom: 2px solid silver;   
+}
+
+nav a {
+    border-color: #838398;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+nav a:hover{
+    color:darksalmon;
+}
+
+nav a:last-child{
+    margin-right: 15px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    opacity: 0.97;
+    padding: 4px 0.3%;
+}
+
+.fixed: hover{
+    opacity: 1; 
+}
+
+.fixed a {
+    font-size: 1.3em;
+}
+.fixed #search {
+    font-size: 1.2em;
+}
+
+#hideMenu {
+    display: inline;
+    
+}
+
+#menuShow {
+   display: inline;
+    font-size: 1.4em;
+    margin-left: 20px;
+    float: left;
+    margin-top: 4px;
+    cursor: pointer;
+    color: #808890;
+}
+
+#mobilMenu{
+    display:none;
+    width: 100%;
+    float: left;  
+}
+
+#search {
+    float: right;
+    color:darkgrey;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-right: 10px;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    flex: 1 0 auto;  
+    min-height:100%;
+}
+
+/* Футер сайта*/
+footer {
+/*    float: left;*/
+    background-color: white;
+    width: 100%;
+    padding: 1%;
+    border-top: 5px solid #838398;  
+    font-family:'M PLUS Rounded 1c', sans-serif;
+}
+
+#site_name {
+    margin-right: 5%;
+    color:cadetblue;
+    font-size: 1.5em;
+    float: right;
+    margin-top: -10px;
+}
+#site_name>span{
+    margin-top: -20px;
+    font-family: 'Oswald', sans-serif; 
+}
+@media(max-width: 1000px){
+    #clear {
+        clear: both;
+    }
+}
+#footer_menu {
+        font-size: 1em;
+}
+#footer_menu>a {
+        color: cadetblue;
+        margin-left: 2%;
+}
+
+#footer_menu>a:hover, #rights>a:hover {
+    border-bottom: 1px solid silver;
+    color:darkcyan;
+}
+
+#rights {
+    float:left;
+    margin-left: 5%;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#social {
+    float: right;
+    width: 60%;
+    margin-right: 5%;
+    margin-top: 1px;
+}
+
+#social>a {
+    border-radius: 50%;
+    background-color:cadetblue;
+    margin-left: 2%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+    
+}
+#social>a>i{
+    margin-top: 5px;
+}
+#social>a:hover {
+    background-color: white;
+}
+@media(max-width: 520px) {
+    #site_name{
+        display: none;
+    }
+    #social{
+        width: 100%;
+    }
+}
+
+
+.inp_login{
+    font-size:30px;
+}
+.row-margin-0{
+    margin:0;
+
+}
+
+

@@ -1,0 +1,7 @@
+RewriteEngine On
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+ServerSignature off
+AddDefaultCharset UTF-8
